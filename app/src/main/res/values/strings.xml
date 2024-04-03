@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Assessment1 MobPro</string>
+    <string name="app_name">Bayaaarrr Zakat Fitrah</string>
+    <string name="pengertian_zakar_fitrah">Zakat fitrah wajib ditunaikan bagi setiap masyarakat muslim yang mampu,
+        Besarannya adalah beras atau makanan pokok seberat 2,5 kg atau 3,5 liter per jiwa. </string>
+    <string name="zakat_atas_nama">Nama pembayaran zakat </string>
+    <string name="jumlah_orang">Jumlah orang </string>
+    <string name="hitung">Hitung</string>
+    <string name="hitungZakat">%1$.2f</string>
+
+
+
+    <string name="luas">Luas: %1$.2f</string>
+    <string name="keliling">Keliling: %1$.2f</string>
+
+    <string name="input_invalid">Tidak boleh kosong.</string>
+
+    <string name="niat_zakat">Nawaitu an uhrija zakat fitri anna wa an jami i maa yalzamuni nafqu tuhun syiar a an far dzolillahi ta ala.\nArtinya :
+        Saya niat mengeluarkan zakat atas diri saya dan atas sekalian yang saya wajibkan memberi nafkah pada mereka secara syariat, fardhu karena Allah ta ala. </string>
+
 </resources>
