@@ -12,6 +12,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Warning
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.Button
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -20,12 +21,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -36,14 +37,18 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import org.d3if0146.assessment1mobpro.R
+import org.d3if0146.assessment1mobpro.navigation.Screen
+import org.d3if0146.assessment1mobpro.navigation.SetupNavGraph
 import org.d3if0146.assessment1mobpro.ui.theme.Assessment1MobProTheme
 
 //import org.d3if0146.assessment1mobpro.ui.theme.Mobpro1Theme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainScreen() {
+fun MainScreen(navController: NavHostController) {
     Scaffold(topBar = {
         TopAppBar(
             title = {
@@ -51,11 +56,19 @@ fun MainScreen() {
             }, colors = TopAppBarDefaults.mediumTopAppBarColors(
                 containerColor = MaterialTheme.colorScheme.primaryContainer,
                 titleContentColor = MaterialTheme.colorScheme.primary
-            )
+            ),
+            actions = {
+                IconButton(onClick = { navController.navigate(Screen.About.route) }) {
+                    Icon(
+                        imageVector = Icons.Outlined.Info,
+                        contentDescription = stringResource(R.string.tentang_aplikasi),
+                        tint = MaterialTheme.colorScheme.primary
+                    )
+                }
+            }
         )
     }) { padding ->
         ScreenContent(Modifier.padding(padding))
-
     }
 }
 
@@ -67,8 +80,7 @@ fun ScreenContent(modifier: Modifier) {
     var jumlahOrang by remember { mutableStateOf("") }
     var jumlahOrangError by remember { mutableStateOf(false) }
 
-    var hitung by remember { mutableIntStateOf(0)  }
-//    var hitung by remember { mutableIntStateOf(false) }
+    var hitung by remember { mutableFloatStateOf(0f) }
 
     Column(
         modifier = modifier
@@ -118,7 +130,7 @@ fun ScreenContent(modifier: Modifier) {
                 namaError = (nama == "" || nama == "0")
                 jumlahOrangError = (jumlahOrang == "" || jumlahOrang == "0")
                 if (namaError || jumlahOrangError) return@Button
-                hitung = hitungZakat(jumlahOrang.toInt())
+                hitung = hitungZakat(jumlahOrang.toFloat())
 
             },
             modifier = Modifier.padding(top = 8.dp),
@@ -127,7 +139,7 @@ fun ScreenContent(modifier: Modifier) {
             Text(text = stringResource(id = R.string.hitung))
         }
 
-        if (hitung != 0) {
+        if (hitung != 0f) {
             Divider(
                 modifier = Modifier.padding(vertical = 8.dp),
                 thickness = 1.dp
@@ -157,7 +169,7 @@ fun ErrorHint(isError: Boolean) {
     }
 }
 
-private fun hitungZakat(jumlahOrang: Int): Int {
+private fun hitungZakat(jumlahOrang: Float): Float {
 
     return jumlahOrang * 3 * 18000
 
@@ -169,6 +181,6 @@ private fun hitungZakat(jumlahOrang: Int): Int {
 @Composable
 fun GreetingPreview() {
     Assessment1MobProTheme {
-        MainScreen()
+        MainScreen(rememberNavController())
     }
 }

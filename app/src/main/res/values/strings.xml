@@ -7,14 +7,15 @@
     <string name="hitung">Hitung</string>
     <string name="hitungZakat">%1$.2f</string>
 
-
-
-    <string name="luas">Luas: %1$.2f</string>
-    <string name="keliling">Keliling: %1$.2f</string>
-
     <string name="input_invalid">Tidak boleh kosong.</string>
 
     <string name="niat_zakat">Nawaitu an uhrija zakat fitri anna wa an jami i maa yalzamuni nafqu tuhun syiar a an far dzolillahi ta ala.\nArtinya :
         Saya niat mengeluarkan zakat atas diri saya dan atas sekalian yang saya wajibkan memberi nafkah pada mereka secara syariat, fardhu karena Allah ta ala. </string>
 
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Hitung BMI merupakan sebuah aplikasi Android untuk meghitung body mass index (BMI)
+        sehingga seseorang dapat menghetahui apakah berat badannya ideal, gemuk, atau kurus. \n\nAplikasi ini dibuat untuk
+        kelas Mobpro1. \n\ Copyright © 2024 Daffi Affan\n ALL rights reserved.</string>
+
+    <string name="kembali">Kembali.</string>
 </resources>
