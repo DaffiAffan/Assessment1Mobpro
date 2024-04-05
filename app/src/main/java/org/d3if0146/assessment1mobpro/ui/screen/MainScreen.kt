@@ -76,12 +76,9 @@ fun MainScreen(navController: NavHostController) {
 fun ScreenContent(modifier: Modifier) {
     var nama by rememberSaveable  { mutableStateOf("") }
     var namaError by rememberSaveable  { mutableStateOf(false) }
-
     var jumlahOrang by rememberSaveable  { mutableStateOf("") }
     var jumlahOrangError by rememberSaveable  { mutableStateOf(false) }
-
     var hitung by rememberSaveable  { mutableFloatStateOf(0f) }
-
     val context = LocalContext.current
 
     Column(
@@ -124,11 +121,6 @@ fun ScreenContent(modifier: Modifier) {
             ),
             modifier = Modifier.fillMaxWidth()
         )
-//        Text(
-//            text = stringResource(id = R.string.niat_zakat),
-//            style = MaterialTheme.typography.bodyLarge,
-//            modifier = Modifier.fillMaxWidth()
-//        )
         Button(
             onClick = {
 
@@ -170,7 +162,6 @@ fun ScreenContent(modifier: Modifier) {
     }
 }
 
-
 @Composable
 fun IconPicker(isError: Boolean, unit: String) {
     if (isError) {
@@ -188,10 +179,9 @@ fun ErrorHint(isError: Boolean) {
 }
 
 private fun hitungZakat(jumlahOrang: Float): Float {
-
     return jumlahOrang * 3 * 18000
-
 }
+
 private fun shareData(context: Context, message:String){
     val shareIntent = Intent(Intent.ACTION_SEND).apply {
         type = "text/plain"
@@ -201,7 +191,6 @@ private fun shareData(context: Context, message:String){
         context.startActivity(shareIntent)
     }
 }
-
 
 @Preview(showBackground = true)
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, showBackground = true)
