@@ -94,7 +94,7 @@ fun ScreenContent(modifier: Modifier) {
 
     ) {
         Text(
-            text = stringResource(id = R.string.pengertian_zakar_fitrah),
+            text = stringResource(id = R.string.niat_zakat),
             style = MaterialTheme.typography.bodyLarge,
             modifier = Modifier.fillMaxWidth()
         )
@@ -201,7 +201,6 @@ private fun shareData(context: Context, message:String){
         context.startActivity(shareIntent)
     }
 }
-
 
 
 @Preview(showBackground = true)

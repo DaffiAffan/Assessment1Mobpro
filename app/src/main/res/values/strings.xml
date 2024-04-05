@@ -1,26 +1,14 @@
 <resources>
     <string name="app_name">Bayaaarrr Zakat Fitrah</string>
-    <string name="pengertian_zakar_fitrah">Zakat fitrah wajib ditunaikan bagi setiap masyarakat muslim yang mampu,
-        Besarannya adalah beras atau makanan pokok seberat 2,5 kg atau 3,5 liter per jiwa. </string>
-    <string name="zakat_atas_nama">Nama pembayaran zakat </string>
-    <string name="jumlah_orang">Jumlah orang </string>
+    <string name="jumlah_orang">"Jumlah orang "</string>
     <string name="hitung">Hitung</string>
-    <string name="hitungZakat">%1$.2f</string>
-
     <string name="input_invalid">Tidak boleh kosong.</string>
-
-    <string name="niat_zakat">Nawaitu an uhrija zakat fitri anna wa an jami i maa yalzamuni nafqu tuhun syiar a an far dzolillahi ta ala.\nArtinya :
-        Saya niat mengeluarkan zakat atas diri saya dan atas sekalian yang saya wajibkan memberi nafkah pada mereka secara syariat, fardhu karena Allah ta ala. </string>
-
+    <string name="niat_zakat">"Nawaitu an uhrija zakat fitri anna wa an jami i maa yalzamuni nafqu tuhun syiar a an far dzolillahi ta ala. Artinya : Saya niat mengeluarkan zakat atas diri saya dan atas sekalian yang saya wajibkan memberi nafkah pada mereka secara syariat, fardhu karena Allah ta ala.  "</string>
+    <string name="kembali">Kembali</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">"Nama Pembayar Zakat: %1$s\n  Jumlah Orang: %2$s\n Total zakat dibayar: Rp.%3$.2f "</string>
+    <string name="pengertian_zakar_fitrah">"Zakat fitrah wajib ditunaikan bagi setiap masyarakat muslim yang mampu,         Besarannya adalah beras atau makanan pokok seberat 2,5 kg atau 3,5 liter per jiwa. "</string>
+    <string name="zakat_atas_nama">"Nama pembayaran zakat "</string>
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
-    <string name="copyright">Hitung BMI merupakan sebuah aplikasi Android untuk meghitung body mass index (BMI)
-        sehingga seseorang dapat menghetahui apakah berat badannya ideal, gemuk, atau kurus. \n\nAplikasi ini dibuat untuk
-        kelas Mobpro1. \n\ Copyright © 2024 Daffi Affan\n ALL rights reserved.</string>
-
-    <string name="kembali">Kembali.</string>
-
-
-    <string name="bagikan">Bagikan.</string>
-    <string name="bagikan_template">Nama Pembayar Zakat: %1$s Rp\nJumlah Orang: %2$s\nTotal zakat dibayar: %3$.2f Rp\n</string>
-
+    <string name="hitungZakat">Jumlah zakat yang Harus dibayar:  Rp.%1$.2f</string>
 </resources>

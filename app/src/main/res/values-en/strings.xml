@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pay zakat fitrah</string>
+    <string name="pengertian_zakar_fitrah">Zakat fitrah is mandatory for every Muslim who can afford it. The amount is rice or staple food weighing 2.5 kg or 3.5 liters per person.</string>
+    <string name="zakat_atas_nama">"Name of zakat payment "</string>
+    <string name="jumlah_orang">"Number of people "</string>
+    <string name="hitung">Count</string>
+    <string name="input_invalid">Can\'t be empty.</string>
+    <string name="tentang_aplikasi">About the App</string>
+    <string name="niat_zakat">"Nawaitu an uhrija zakat fitri anna wa an jami i maa yalzamuni nafqu tuhun syiar a an far dzolillahi ta ala. Meaning : I intend to pay zakaah on myself and on all those on whom I am obliged to provide for them according to sharee'ah, fard for the sake of Allah, may He be exalted. "</string>
+    <string name="kembali">"Back "</string>
+    <string name="bagikan">"Share "</string>
+    <string name="bagikan_template">"Name of Zakat Payer: %1$s Number of People: %2$s Total zakat paid: Rp.%3$.2f "</string>
+    <string name="hitungZakat">"Amount of zakat to be paid:  Rp.%1$.2f "</string>
+</resources>
