@@ -18,4 +18,9 @@
         kelas Mobpro1. \n\ Copyright © 2024 Daffi Affan\n ALL rights reserved.</string>
 
     <string name="kembali">Kembali.</string>
+
+
+    <string name="bagikan">Bagikan.</string>
+    <string name="bagikan_template">Nama Pembayar Zakat: %1$s Rp\nJumlah Orang: %2$s\nTotal zakat dibayar: %3$.2f Rp\n</string>
+
 </resources>
